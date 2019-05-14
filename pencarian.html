@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+   <!-- JS -->
+   <script src="js/bootstrap/jquery.min.js"></script>
+   <script src="js/bootstrap/bootstrap.min.js"></script>
+   <script src="js/bootstrap/popper.min.js"></script>
+   <script src="js/form-validator/jquery.form-validator.min.js"></script>
+
+   <!--font-->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<style>
+
+
+
+body{
+}
+</style>
+
+</head>
+  <body>
+
+    <!-- Navbar Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="gambar/logo.svg" alt="lokerlink logo" class="img-fluid">
+      </a>
+      <ul class="navbar-nav mr-auto my-2 my-lg-0 bahasa-big-screen" >
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bahasa</a>
+            <div class="dropdown-menu ">
+              <a class="dropdown-item" href="#">
+                <span class="flag-icon flag-icon-id"></span>
+                Indonesia</a>
+              <a class="dropdown-item" href="#">
+                <span class="flag-icon flag-icon-uk"></span>
+                English</a>
+            </div>
+          </li>
+      </ul>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0" >
+          <li class="btn btn-profesional" style="margin-right:40px; font-size:16px;">Profesional</li>
+          <li class="btn btn-company-outline" style="font-size:16px;">Company
+          </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 bahasa-little-screen " >
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bahasa</a>
+              <div class="dropdown-menu ">
+                <a class="dropdown-item" href="#" style="text-align:left;">
+                  <span class="flag-icon flag-icon-id"></span>
+                  Indonesia</a>
+                <a class="dropdown-item" href="#" style="text-align: left;">
+                  <span class="flag-icon flag-icon-uk"></span>
+                  English</a>
+              </div>
+            </li>
+        </ul>
+
+</div>
+      </div>
+    </nav>
+    <!-- End Navbar Menu -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center">
+  <div class="container  ">
+<div class="d-flex justify-content-center align-items-center">
+<div class="background-form w-75 ">
+  <form class="form-inline d-flex justify-content-center align-items-center" style="width:100%;">
+    <input class="form-control  form-control-lg " type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-color-orange btn-lg my-2 my-sm-0" type="submit" style="border-radius:0 10px 10px 0;">Search</button>
+  </form>
+</div>
+</div>
+
+  </div>
+</div>
+<!-- End jumbotron -->
+
+<!-- filter & Job list search -->
+
+<!-- filter jobs -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 ">
+  <div class="card card-filter">
+      <div class="card-header d-flex d-flex justify-content-center align-items-center" style="background:#006FB1; color:white; font-size:16px; border:1px solid #006FB1; ">Pilih Kriteria</div>
+      <div class="card-body">
+        <form action="/action_page.php">
+           <div class="form-group">
+             <input type="text" class="form-control"  id="email" placeholder="Posisi, Kata Kunci" name="posisi">
+           </div>
+           <div class="form-group">
+             <input type="text" class="form-control" id="pwd" placeholder="Nama Perusahaan" name="perusahaan">
+           </div>
+              <div class="form-group">
+             <input type="text" class="form-control" id="pwd" placeholder="Lokasi Pekerjaan" name="lokasi">
+           </div>
+              <div class="form-group">
+             <input type="text" class="form-control" id="pwd" placeholder="Fungsi Pekerjaan" name="fungsi_pekerjaan">
+           </div>
+           <div class="form-group form-check">
+           </div>
+           <button type="submit" class="btn btn-lg btn-block btn-color-orange">Cari Lowongan</button>
+         </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Jobs List Search -->
+
+  <!-- For PC + Laptop + Tablet -->
+  <div class="col-lg-8 col-md-12 lowongan-title">
+    <h5>10 Lowongan Pekerjaan Tersedia</h5>
+    <p style="font-size:16px;">Ditampilkan: 1-8 Lowongan Pekerjaan</p>
+
+    <!-- job 1 -->
+    <div class="card card-list">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+            <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-5 col-5">
+            <p class="title-works"> Database Programer </p>
+            <p class="title-company"> PT IDN Media</p>
+            <div class="align-self-end">
+            <button type="button" class="btn btn-sm btn-danger">
+              Partime
+            </button>
+          </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-4 col-4 d-flex flex-column ">
+            <p class="date-works">Diterbitkan 21 April 2019</p>
+            <div class="list-button d-flex align-items-end" style="height:100%;">
+            <button type="button" class="btn btn-sm btn-color-orange" style="margin-right:24px;">
+              Lamar
+            </button>
+            <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+          </div>
+           </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- job 2 -->
+    <div class="card card-list">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+            <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-5 col-5">
+            <p class="title-works"> Database Programer </p>
+            <p class="title-company"> PT IDN Media</p>
+            <div class="align-self-end">
+            <button type="button" class="btn btn-sm btn-danger">
+              Partime
+            </button>
+          </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-4 col-4 d-flex flex-column ">
+            <p class="date-works">Diterbitkan 21 April 2019</p>
+            <div class="list-button d-flex align-items-end" style="height:100%;">
+            <button type="button" class="btn btn-sm btn-color-orange" style="margin-right:24px;">
+              Lamar
+            </button>
+            <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+          </div>
+           </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- job 3 -->
+    <div class="card card-list">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+            <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-5 col-5">
+            <p class="title-works"> Database Programer </p>
+            <p class="title-company"> PT IDN Media</p>
+            <div class="align-self-end">
+            <button type="button" class="btn btn-sm btn-danger">
+              Partime
+            </button>
+          </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-4 col-4 d-flex flex-column ">
+            <p class="date-works">Diterbitkan 21 April 2019</p>
+            <div class="list-button d-flex align-items-end" style="height:100%;">
+            <button type="button" class="btn btn-sm btn-color-orange" style="margin-right:24px;">
+              Lamar
+            </button>
+            <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+          </div>
+           </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <!-- job 4 -->
+        <div class="card card-list">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-5 col-5">
+                <p class="title-works"> Database Programer </p>
+                <p class="title-company"> PT IDN Media</p>
+                <div class="align-self-end">
+                <button type="button" class="btn btn-sm btn-danger">
+                  Partime
+                </button>
+              </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-4 col-4 d-flex flex-column ">
+                <p class="date-works">Diterbitkan 21 April 2019</p>
+                <div class="list-button d-flex align-items-end" style="height:100%;">
+                <button type="button" class="btn btn-sm btn-color-orange" style="margin-right:24px;">
+                  Lamar
+                </button>
+                <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+              </div>
+               </div>
+            </div>
+
+          </div>
+        </div>
+
+
+            <!-- job 5 -->
+            <div class="card card-list">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                    <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-5 col-5">
+                    <p class="title-works"> Database Programer </p>
+                    <p class="title-company"> PT IDN Media</p>
+                    <div class="align-self-end">
+                    <button type="button" class="btn btn-sm btn-danger">
+                      Partime
+                    </button>
+                  </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-4 d-flex flex-column ">
+                    <p class="date-works">Diterbitkan 21 April 2019</p>
+                    <div class="list-button d-flex align-items-end" style="height:100%;">
+                    <button type="button" class="btn btn-sm btn-color-orange" style="margin-right:24px;">
+                      Lamar
+                    </button>
+                    <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+                  </div>
+                   </div>
+                </div>
+
+              </div>
+            </div>
+
+      <!-- For smartphone  -->
+      <!--
+      Note: If screen max width 575px element list jobs in card layout is change
+     -->
+
+     <!-- job 1 -->
+        <div class="card card-xs-list">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-5 col-7">
+                <p class="title-works"> Database Programer </p>
+                <p class="title-company"> PT IDN Media</p>
+                <p class="date-works">Diterbitkan 21 April 2019</p>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-4 col-2 d-flex flex-column ">
+                <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+              </div>
+               </div>
+
+               <div class="row" style="margin-top:8px;">
+                 <div class="col-3">
+
+                 </div>
+                 <div class="col-4">
+                   <div class="align-self-end">
+                   <button type="button" class="btn btn-sm btn-danger">
+                     Partime
+                   </button>
+                 </div>
+                 </div>
+                 <div class="col-5 d-flex justify-content-end">
+                   <button type="button" class="btn btn-sm btn-color-orange" style="padding:4px 16px;">
+                     Lamar
+                   </button>
+                 </div>
+               </div>
+            </div>
+          </div>
+
+          <!-- job 2 -->
+
+                  <div class="card card-xs-list">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                          <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5 col-7">
+                          <p class="title-works"> Database Programer </p>
+                          <p class="title-company"> PT IDN Media</p>
+                          <p class="date-works">Diterbitkan 21 April 2019</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-2 d-flex flex-column ">
+                          <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+                        </div>
+                         </div>
+
+                         <div class="row" style="margin-top:8px;">
+                           <div class="col-3">
+
+                           </div>
+                           <div class="col-4">
+                             <div class="align-self-end">
+                             <button type="button" class="btn btn-sm btn-danger">
+                               Partime
+                             </button>
+                           </div>
+                           </div>
+                           <div class="col-5 d-flex justify-content-end">
+                             <button type="button" class="btn btn-sm btn-color-orange" style="padding:4px 16px;">
+                               Lamar
+                             </button>
+                           </div>
+                         </div>
+                      </div>
+                    </div>
+
+                    <!-- Job 3 -->
+
+                            <div class="card card-xs-list">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                                    <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+                                  </div>
+                                  <div class="col-lg-6 col-md-6 col-sm-5 col-7">
+                                    <p class="title-works"> Database Programer </p>
+                                    <p class="title-company"> PT IDN Media</p>
+                                    <p class="date-works">Diterbitkan 21 April 2019</p>
+                                  </div>
+
+                                  <div class="col-lg-3 col-md-3 col-sm-4 col-2 d-flex flex-column ">
+                                    <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+                                  </div>
+                                   </div>
+
+                                   <div class="row" style="margin-top:8px;">
+                                     <div class="col-3">
+
+                                     </div>
+                                     <div class="col-4">
+                                       <div class="align-self-end">
+                                       <button type="button" class="btn btn-sm btn-danger">
+                                         Partime
+                                       </button>
+                                     </div>
+                                     </div>
+                                     <div class="col-5 d-flex justify-content-end">
+                                       <button type="button" class="btn btn-sm btn-color-orange" style="padding:4px 16px;">
+                                         Lamar
+                                       </button>
+                                     </div>
+                                   </div>
+                                </div>
+                              </div>
+
+                                                  <!-- Job 4 -->
+
+                                                          <div class="card card-xs-list">
+                                                            <div class="card-body">
+                                                              <div class="row">
+                                                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                                                                  <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-5 col-7">
+                                                                  <p class="title-works"> Database Programer </p>
+                                                                  <p class="title-company"> PT IDN Media</p>
+                                                                  <p class="date-works">Diterbitkan 21 April 2019</p>
+                                                                </div>
+
+                                                                <div class="col-lg-3 col-md-3 col-sm-4 col-2 d-flex flex-column ">
+                                                                  <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+                                                                </div>
+                                                                 </div>
+
+                                                                 <div class="row" style="margin-top:8px;">
+                                                                   <div class="col-3">
+
+                                                                   </div>
+                                                                   <div class="col-4">
+                                                                     <div class="align-self-end">
+                                                                     <button type="button" class="btn btn-sm btn-danger">
+                                                                       Partime
+                                                                     </button>
+                                                                   </div>
+                                                                   </div>
+                                                                   <div class="col-5 d-flex justify-content-end">
+                                                                     <button type="button" class="btn btn-sm btn-color-orange" style="padding:4px 16px;">
+                                                                       Lamar
+                                                                     </button>
+                                                                   </div>
+                                                                 </div>
+                                                              </div>
+                                                            </div>
+
+
+
+                                                                                <!-- Job 5 -->
+
+                                                                                        <div class="card card-xs-list">
+                                                                                          <div class="card-body">
+                                                                                            <div class="row">
+                                                                                              <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center">
+                                                                                                <img src="gambar/IDN_Logo.svg" class="img-fluid" width="128" >
+                                                                                              </div>
+                                                                                              <div class="col-lg-6 col-md-6 col-sm-5 col-7">
+                                                                                                <p class="title-works"> Database Programer </p>
+                                                                                                <p class="title-company"> PT IDN Media</p>
+                                                                                                <p class="date-works">Diterbitkan 21 April 2019</p>
+                                                                                              </div>
+
+                                                                                              <div class="col-lg-3 col-md-3 col-sm-4 col-2 d-flex flex-column ">
+                                                                                                <i class='fas fa-heart ' style='font-size:24px; color:#A4A4A4; padding-bottom:5px;'></i>
+                                                                                              </div>
+                                                                                               </div>
+
+                                                                                               <div class="row" style="margin-top:8px;">
+                                                                                                 <div class="col-3">
+
+                                                                                                 </div>
+                                                                                                 <div class="col-4">
+                                                                                                   <div class="align-self-end">
+                                                                                                   <button type="button" class="btn btn-sm btn-danger">
+                                                                                                     Partime
+                                                                                                   </button>
+                                                                                                 </div>
+                                                                                                 </div>
+                                                                                                 <div class="col-5 d-flex justify-content-end">
+                                                                                                   <button type="button" class="btn btn-sm btn-color-orange" style="padding:4px 16px;">
+                                                                                                     Lamar
+                                                                                                   </button>
+                                                                                                 </div>
+                                                                                               </div>
+                                                                                            </div>
+                                                                                          </div>
+
+
+
+
+          <!-- Pagination -->
+          <div class="pagination-list">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="javascript:void(0);"><<</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);"><</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">></a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">>></a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- end filter & Job list search -->
+
+
+
+  </body>
+</html>

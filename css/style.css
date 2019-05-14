@@ -1,0 +1,410 @@
+
+/*
+  <!------------------------ general setting ------------------------------!>
+*/
+
+*{
+      box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1{
+font-size: 6em;
+letter-spacing: -1.5px;
+margin:0;
+
+}
+
+h2{
+font-size: 3.75em;
+letter-spacing: -0.5px;
+margin:0;
+}
+
+h3{
+font-size: 3em;
+letter-spacing:0;
+margin:0;
+}
+
+h4{
+font-size: 2.12em;
+letter-spacing: 0.25px;
+margin:0;
+
+}
+
+h5{
+font-size: 1.5em;
+letter-spacing: 0;
+margin:0;
+}
+
+h6{
+font-size: 1.25em;
+letter-spacing: 0.15;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+a,i,p{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+  <!------------------------ Navbar Menu------------------------------!>
+*/
+.btn-profesional{
+  background: rgb(239,176,127);
+  background: linear-gradient(0deg, rgba(239,176,127,1) 0%, rgba(233,120,60,1) 100%);
+  width: 120px;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  margin-right:40px;
+  font-size:16px;
+}
+
+.btn-profesional:hover{
+  background: rgb(231,143,106);
+  background: linear-gradient(0deg, rgba(231,143,106,1) 0%, rgba(206,103,58,1) 100%);
+}
+
+.btn-company-outline{
+  border: 1px solid rgb(231,143,106);
+  width: 120px;
+  padding: 12px;
+  color: rgb(231,143,106);
+  font-size:16px;
+}
+
+.btn-company-outline:hover{
+  border: 1px solid rgb(231,143,106);
+}
+
+
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+.flag-icon-id {
+  background-image: url(../gambar/id.svg);
+}
+.flag-icon-id.flag-icon-squared {
+  background-image: url(../gambar/id.svg);
+}
+
+.flag-icon-uk {
+  background-image: url(../gambar/gb.svg);
+}
+.flag-icon-uk.flag-icon-squared {
+  background-image: url(../gambar/gb.svg);
+}
+
+  /*
+<!------------------------ jumbotron ------------------------------!>
+*/
+
+.jumbotron{
+ background-image: url("../gambar/Back_atas.svg");
+ height: 200px;
+}
+
+.background-form{
+  width: 760px;
+  height: 104px;
+  background: rgba(255,255,255,0.8);
+  padding:35px 25px 25px 25px;
+  border-radius: 10px;
+}
+
+.background-form .form-control{
+  width: 87%;
+  height: 40px;
+  border-radius:10px 0 0 10px;
+  border-right-width: 0px;
+  font-size: 14px;
+
+}
+
+.background-form .form-control:focus {
+  border-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.background-form .btn{
+  height:39px;
+
+}
+
+.btn-color-orange{
+  background: rgb(239,176,127);
+  background: linear-gradient(0deg, rgba(239,176,127,1) 0%, rgba(233,120,60,1) 100%);
+  color: white;
+  font-size: 14px;
+}
+
+.btn-color-orange:hover{
+  background: rgb(231,143,106);
+  background: linear-gradient(0deg, rgba(231,143,106,1) 0%, rgba(206,103,58,1) 100%);
+}
+
+/*
+<!------------------------ filter & job list search------------------------------!>
+*/
+
+/*
+<!------------------------ Filter Style ------------------------------!>
+*/
+.card-filter{
+width: 264px;
+border:none;
+box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-filter .form-control{
+  font-size: 14px;
+}
+
+/*
+<!------------------------ job list Search ------------------------------!>
+*/
+.card-list{
+  margin: 16px 0 0 0;
+}
+
+.list-button .btn{
+  padding:4px 16px;
+  font-size:14px;
+}
+
+.title-works{
+  font-size:16px;
+  color:#006FB1;
+}
+
+.title-company{
+  font-size:12px;
+  margin:8px 0px;
+}
+
+.date-works{
+  font-size:12px;
+  color:#999999;
+}
+
+
+.card-xs-list{
+  display: none;
+}
+
+.bahasa-little-screen{
+  display: none;
+}
+
+
+/* pagination */
+.pagination-list{
+  margin: 56px 0;
+}
+
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /*jumbotron */
+  .background-form .form-control{
+    width: 87%;
+  }
+ }
+
+
+ /* Large devices (desktops, less than 1200px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+/* navbar*/
+  .btn-profesional{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+   .btn-company-outline{
+    width: 100%;
+  }
+
+  .bahasa-big-screen{
+    display: none;
+  }
+
+  .bahasa-little-screen{
+    display: block;
+    text-align: center;
+
+  }
+
+
+
+  /* jumbotron */
+  .background-form .form-control{
+    width: 85%;
+  }
+  .background-form .btn{
+    padding-left:12px;
+    padding-right: 12px;
+
+  }
+
+  /* Filter and Joblist*/
+  .card-filter{
+    width: 100%;
+  }
+
+.lowongan-title{
+  margin-top:30px;
+  }
+
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) {
+   /* navbar*/
+     .btn-profesional{
+       width: 100%;
+       margin-bottom: 16px;
+     }
+
+      .btn-company-outline{
+       width: 100%;
+     }
+
+     .bahasa-big-screen{
+       display: none;
+     }
+
+     .bahasa-little-screen{
+       display: block;
+       text-align: center;
+
+     }
+
+   /* jumbotron */
+   .background-form .form-control{
+     width: 75%;
+   }
+   .card-filter{
+     width: 100%;
+ }
+
+ /* Filter and Joblist*/
+ .lowongan-title{
+   margin-top:30px;
+ }
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+
+   /* navbar*/
+     .btn-profesional{
+       width: 100%;
+       margin-bottom: 16px;
+     }
+
+      .btn-company-outline{
+       width: 100%;
+     }
+
+     .bahasa-big-screen{
+       display: none;
+     }
+
+     .bahasa-little-screen{
+       display: block;
+       text-align: center;
+
+     }
+
+   /*jumbotron*/
+   .background-form{
+     padding:25px 25px 25px 25px;
+   }
+   .background-form .form-control{
+     width: 70%;
+   }
+
+   /*filter & Job list */
+   .card-filter{
+     width: 100%;
+   }
+
+ .lowongan-title{
+   margin-top:30px;
+ }
+
+ .card-list .img-fluid{
+  width: 64px;
+  }
+
+.title-works{
+  font-size:16px;
+  color:#006FB1;
+  }
+
+.title-company{
+  font-size:10px;
+  margin:8px 0px;
+  }
+
+.date-works{
+  font-size:10px;
+  color:#999999;
+  }
+
+.card-xs-list{
+  margin: 16px 0 0 0;
+  display: block;
+  }
+
+.card-list{
+  display: none;
+  }
+
+}
+
+@media (max-width: 562px){
+
+  .jumbotron-fluid .w-75{
+    width: 100% !important;
+  }
+}
