@@ -260,7 +260,7 @@ box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 /* Login */
 .logo {
-  margin-top:22px;
+  margin:60px 0px;
 }
 
 .logo h5{
@@ -344,7 +344,7 @@ border-color: #DDB532;
 
 
 .title-register{
-  margin:15px 0;
+  margin:20px 0 15px 0;
 }
 
 .title-register-1{
@@ -358,7 +358,7 @@ border-color: #DDB532;
   width: 436px;
 }
 
-.form-register input{
+.form-high{
   height: 46px;
   border-radius: 4px;
 }
@@ -377,7 +377,7 @@ border-color: #DADADA;
 }
 
 .side-left-h1 {
-  margin: 50px 0 25px 40px;
+  margin: 85px 0 25px 40px;
   text-align: left;
 }
 
@@ -416,7 +416,7 @@ border-color: #DADADA;
   min-height: 100%;
   z-index: 1;
   overflow-x: hidden;
-
+  margin-bottom: 50px;
   }
 }
 
@@ -488,6 +488,15 @@ border-color: #DADADA;
     text-align: center;
   }
 
+
+  .side-right{
+    margin-bottom: 50px;
+  }
+
+  .form-login{
+    margin-top: -15px;
+  }
+
 }
 
 
@@ -536,6 +545,14 @@ border-color: #DADADA;
    text-align: center;
  }
 
+
+ .side-right{
+   margin-bottom: 50px;
+ }
+
+ .form-login{
+   margin-top: -15px;
+ }
 
 }
 
@@ -616,6 +633,14 @@ border-color: #DADADA;
     margin: 0 0 32px 0;
     text-align: center;
   }
+
+.side-right{
+  margin-bottom: 50px;
+}
+
+.form-login{
+  margin-top: -15px;
+}
 
 }
 

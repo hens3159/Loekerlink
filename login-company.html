@@ -18,9 +18,9 @@
 <style>
 body{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6affba+0,2ed991+100 */
-background-image: url("gambar/background-login.jpg"); /* Old browsers */
-background-repeat: no-repeat;
-background-size: cover;
+  background: url("gambar/background-login.jpg") no-repeat  fixed; /* Old browsers */
+  background-position: center;
+  background-size: cover;
 /* background: -moz-linear-gradient(top, #6affba 0%, #2ed991 100%) fixed; /* FF3.6-15 */
 /* background: -webkit-linear-gradient(top, #6affba 0%,#2ed991 100%)fixed; /* Chrome10-25,Safari5.1-6 */ */
 /* background: linear-gradient(to bottom, #6affba 0%,#2ed991 100%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ */
@@ -42,7 +42,7 @@ background-size: cover;
     <p style="text-align:center; margin-bottom:15px; font-size:20px; color:white;"> Hii Employers, Welcome to LokerLink </p>
     </div>
 
-    <div class="row justify-content-center row-center">
+    <div class="row justify-content-center row-center ">
 
         <form action="dashboard_stock.html" class="form-login" style="width: 370px;">
           <div class="form-group">
@@ -54,12 +54,15 @@ background-size: cover;
          </div>
 
          <div class="form-row">
-           <div class="col-8">
-             <input type="password" class="form-control" id="pwd" placeholder="Text Validation" name="text_validation">
+           <div class="col-5">
+             <input type="password" class="form-control form-high" id="pwd" placeholder="Text Validation" name="text_validation">
           </div>
           <div class="col-4">
-            <input type="password" class="form-control" id="pwd" placeholder="47GDX" name="captca">
+            <input type="password" class="form-control form-high" id="pwd" placeholder="47GDX" name="captca">
          </div>
+         <div class="col-3">
+           <p style="padding-top:10px; color:white;">Ubah Kode </p>
+        </div>
 
         </div>
         <a href="" class="" style="color:white;"> Forgot Password?<a/>

@@ -31,7 +31,7 @@ body{
 
         <div class="col-12 col-xsl-6  col-lg-6 col-sm-12 col-md-12 side-left" >
           <h1 class=" h1  text-white side-left-h1">Let's Get Started </h1>
-          <h5 class=" h4  text-white side-left-h5">to get better recruitment solution </h5>
+          <h5 class=" h4  text-white side-left-h5">To get better recruitment solution </h5>
           <img src="gambar/Register_Company.svg" class="mx-auto d-block img-fluid" width="450" height="750" alt="logo" style="margin-top:50px; margin-bottom:50px;">
           </div>
 
@@ -51,44 +51,58 @@ body{
             <div class="row justify-content-center row-center">
 
               <form action="dashboard_stock.html" class="form-register" id="registration-form">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Nama Lengkap" name="nama">
-                </div>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="email" placeholder="Email" name="username">
+                  <input type="text" class="form-control form-high" id="name" placeholder="Nama Pengguna" name="nama">
                 </div>
-
                 <div class="form-group">
-                 <input type="password" class="form-control" id="password" placeholder="Buat Password" name="password">
+                  <input type="text" class="form-control form-high" id="email" placeholder="Email" name="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-high" id="email" placeholder="Nama Company" name="Email">
+                </div>
+                <div class="form-group">
+                 <input type="password" class="form-control form-high" id="password" placeholder="Buat Password" name="password">
+                 <p style="color:red">Password minimal panjang 8 karakter dan terdiri dari huruf besar, huruf kecil, symbol dan angka</p>
                </div>
 
                <div class="form-group">
-                <input type="password" class="form-control" id="repeat" placeholder="Konfirmasi Password" name="repeat">
+                <input type="password" class="form-control form-high" id="repeat" placeholder="Konfirmasi Password" name="repeat">
               </div>
 
               <div class="form-row">
-                <div class="col-8">
-                  <input type="password" class="form-control" id="pwd" placeholder="Text Validation" name="text_validation">
+                <div class="col-5">
+                  <input type="password" class="form-control form-high" id="pwd" placeholder="Text Validation" name="text_validation">
                </div>
                <div class="col-4">
-                 <input type="password" class="form-control" id="pwd" placeholder="47GDX" name="captca">
+                 <input type="password" class="form-control form-high" id="pwd" placeholder="47GDX" name="captca">
               </div>
-
+              <div class="col-3">
+                <p style="padding-top:10px; color:white;">Ubah Kode </p>
              </div>
+           </div>
 
+             <div class="form-check" style="padding-top:10px;">
+               <label class="form-check-label">
+                 <input type="checkbox" class="form-check-input" value="">Saya menerima <a href="www.dot.com">Peraturan LokerLink</a>
+               </label>
+             </div>
              <div class="form-group" style="margin-top: 30px; margin-bottom:15px;">
-               <input type="submit" class="btn btn-color-orange text-white btn-block" id="myBtn" value="Register">
+               <input type="submit" class="btn btn-color-orange text-white btn-block form-high" id="myBtn" value="Register">
             </div>
             <div class="form-group">
-              <input type="button" id="register" class="btn btn-outline-primary  btn-block button-link" value="Login"  >
+              <input type="button" id="register" class="btn btn-outline-primary  btn-block button-link form-high" value="Login"  >
            </div>
 
               </form>
             </div>
         </div>
 </div>
-
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="">Saya menerima <a href="www.dot.com">Peraturan LokerLink</a>
+  </label>
+</div>
 </div>
 </div>
 
